@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/loginAction.do" location="50,50" dimension="226,96" />
+  <StrutsActivity path="/adminhome.do" location="350,50" dimension="252,96" />
+  <StrutsActivity path="/ViewCategories.do" location="950,50" dimension="242,96" />
+  <StrutsActivity path="/addCategoryAction.do" location="1250,50" dimension="266,96" />
+  <StrutsActivity path="/deleteCategoryAction.do" location="50,250" dimension="277,96" />
+  <StrutsActivity path="/viewItems.do" location="650,250" dimension="215,96" />
+  <StrutsActivity path="/updateCategory.do" location="950,250" dimension="247,96" />
+  <StrutsActivity path="/addNewItem.do" location="1250,250" dimension="231,96" />
+  <StrutsActivity path="/deleteItemAction.do" location="1550,250" dimension="218,96" />
+  <StrutsActivity path="/editItemAction.do" location="50,450" dimension="240,96" />
+  <StrutsActivity path="/viewInventorybyCategory.do" location="350,450" dimension="252,96" />
+  <StrutsActivity path="/addNewInventory.do" location="950,450" dimension="257,96" />
+  <StrutsActivity path="/viewQueries.do" location="1550,450" dimension="252,96" />
+  <StrutsActivity path="/customerOrders.do" location="50,650" dimension="248,96" />
+  <StrutsActivity path="/adminchangepassword.do" location="350,650" dimension="252,96" />
+  <StrutsActivity path="/adminchangequestion.do" location="950,650" dimension="252,96" />
+  <StrutsActivity path="/adminChangePasswordAction.do" location="1550,650" dimension="323,96" />
+  <StrutsActivity path="/customerhome.do" location="50,850" dimension="252,96" />
+  <StrutsActivity path="/userViewCategories.do" location="650,850" dimension="265,96" />
+  <StrutsActivity path="/viewCustomerItems.do" location="1250,850" dimension="267,96" />
+  <StrutsActivity path="/queries.do" location="50,1050" dimension="252,96" />
+  <StrutsActivity path="/sendQuery.do" location="650,1050" dimension="219,96" />
+  <StrutsActivity path="/CustomerViewQuerys.do" location="950,1050" dimension="223,96" />
+  <StrutsActivity path="/employeeViewCategories.do" location="1250,1050" dimension="329,96" />
+  <StrutsActivity path="/viewEmployeeCustomerItems.do" location="50,1250" dimension="354,96" />
+  <StrutsActivity path="/viewEmployeeCustomerOrders.do" location="650,1250" dimension="360,96" />
+  <StrutsActivity path="/viewCustomerOrders.do" location="1250,1250" dimension="308,96" />
+  <StrutsActivity path="/DealerHome.jsp" location="50,1450" dimension="119,51" />
+  <StrutsActivity path="/LoginForm.jsp" location="350,1450" dimension="111,51" />
+  <StrutsActivity path="/EmployeeHome.jsp" location="650,1450" dimension="138,51" />
+  <StrutsActivity path="/AdminHome.jsp" location="950,1450" dimension="122,51" />
+  <StrutsActivity path="/CustomerHome.jsp" location="1250,1450" dimension="138,51" />
+  <StrutsActivity path="/Success.jsp" location="1550,1450" dimension="94,51" />
+  <StrutsActivity path="/ViewCategories.jsp" location="50,1650" dimension="134,51" />
+  <StrutsActivity path="/ViewItems.jsp" location="350,1650" dimension="107,51" />
+  <StrutsActivity path="/UpdateCustomerOrder.jsp" location="650,1650" dimension="173,51" />
+  <StrutsActivity path="/Success1.jsp" location="950,1650" dimension="100,51" />
+  <StrutsActivity path="/userViewCategories.jsp" location="1250,1650" dimension="156,51" />
+  <StrutsActivity path="/CustomerViewItems.jsp" location="1550,1650" dimension="159,51" />
+  <StrutsActivity path="/ViewQueryStatus.jsp" location="50,1850" dimension="142,51" />
+  <StrutsActivity path="/EmployeeViewCategories.jsp" location="350,1850" dimension="186,51" />
+  <StrutsActivity path="/EmployeeViewCustomerItems.jsp" location="650,1850" dimension="211,51" />
+  <StrutsActivity path="/ViewEmployeeCustomerOrder.jsp" location="950,1850" dimension="212,51" />
+  <StrutsActivity path="/ViewCustomerOrder.jsp" location="1250,1850" dimension="160,51" />
+  <StrutsActivity path="/CusrSuccess.jsp" />
+  <StrutsTransition id="/viewCustomerOrders.do,norecords,/CusrSuccess.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1404,1298" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteCategoryAction.do,deleteFail,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userViewCategories.do,norecords,/Success1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/loginAction.do,customer,/CustomerHome.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/CustomerViewQuerys.do,viewQueriesStatus,/ViewQueryStatus.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/adminChangePasswordAction.do,ChangeSuccess,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addNewItem.do,registerFail,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewEmployeeCustomerOrders.do,norecords,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/loginAction.do,Employeehome,/EmployeeHome.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewEmployeeCustomerOrders.do,viewEmployeeCustomerOrders,/ViewEmployeeCustomerOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/employeeViewCategories.do,ViewCategories,/EmployeeViewCategories.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/employeeViewCategories.do,norecords,/Success1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteCategoryAction.do,deleteSuccess,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updateCategory.do,updateFail,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addCategoryAction.do,viewCategorys,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customerOrders.do,ViewCustomerOrders,/UpdateCustomerOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updateCategory.do,updateSuccess,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editItemAction.do,updateFail,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteItemAction.do,deleteFail,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editItemAction.do,updateSuccess,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customerOrders.do,norecords,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addNewInventory.do,registerSuccess,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/adminChangePasswordAction.do,ChangeFail,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addNewItem.do,registerSuccess,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/loginAction.do,norecords,/LoginForm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addCategoryAction.do,norecords,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewCustomerOrders.do,viewCustomerOrders,/ViewCustomerOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ViewCategories.do,norecords,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/sendQuery.do,viewQueriesStatus,/CustomerViewQuerys.do,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addNewInventory.do,registerFail,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewEmployeeCustomerItems.do,ViewItems,/EmployeeViewCustomerItems.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/loginAction.do,adminhome,/AdminHome.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/ViewCategories.do,ViewCategories,/ViewCategories.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewItems.do,ViewItems,/ViewItems.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewCustomerOrders.do,norecords,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/loginAction.do,dealer,/DealerHome.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewCustomerItems.do,ViewItems,/CustomerViewItems.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/userViewCategories.do,ViewCategories,/userViewCategories.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/deleteItemAction.do,deleteSuccess,/Success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

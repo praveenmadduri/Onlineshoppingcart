@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+	<data-sources />
+	<form-beans>
+		<form-bean name="profile" type="com.dts.dae.model.Profile" />
+		<form-bean name="category" type="com.dts.crsm.model.Category" />
+		<form-bean name="item" type="com.dts.crsm.model.Item" />
+		<form-bean name="inventory" type="com.dts.crsm.model.Inventory" />
+		<form-bean name="query" type="com.dts.crsm.model.Query" />
+
+	</form-beans>
+	<global-exceptions />
+	<global-forwards />
+	<action-mappings>
+		<action path="/loginAction" type="com.dts.project.action.LoginAction"
+			validate="false" name="profile">
+			<forward name="adminhome" path="/AdminHome.jsp" />
+			<forward name="Employeehome" path="/EmployeeHome.jsp" />
+			<forward name="customer" path="/CustomerHome.jsp" />
+			<forward name="dealer" path="/DealerHome.jsp" />
+			<forward name="norecords"
+				path="/LoginForm.jsp?ls=Invalid username and password" />
+
+		</action>
+		<action path="/adminhome" type="org.apache.struts.actions.ForwardAction"
+			parameter="/AdminHome.jsp" />
+		<action path="/ViewCategories" type="com.dts.project.action.ViewCategories"
+			validate="false">
+			<forward name="ViewCategories" path="/ViewCategories.jsp" />
+			<forward name="norecords" path="/Success.jsp?status=No Records Found" />
+
+		</action>
+		<action attribute="category" name="category" path="/addCategoryAction"
+			scope="request" type="com.dts.project.action.AddCategoryAction"
+			validate="false">
+			<forward name="viewCategorys"
+				path="/Success.jsp?status=Category Added Successfully" />
+			<forward name="norecords"
+				path="/Success.jsp?status=Category Addition to be Failed" />
+
+		</action>
+		<action path="/deleteCategoryAction" type="com.dts.project.action.DeleteCategoryAction">
+			<forward name="deleteSuccess"
+				path="/Success.jsp?status=Category Deleted  Successfully" />
+			<forward name="deleteFail"
+				path="/Success.jsp?status=Category Deleted to be Failed" />
+
+		</action>
+		<action path="/viewItems" type="com.dts.project.action.ViewItems"
+			validate="false">
+
+			<forward name="ViewItems" path="/ViewItems.jsp" />
+
+		</action>
+		<action attribute="category" name="category" path="/updateCategory"
+			scope="request" type="com.dts.project.action.UpdateCategory"
+			validate="false">
+			<forward name="updateSuccess"
+				path="/Success.jsp?status=Category Updated SuccessFully" />
+			<forward name="updateFail" path="/Success.jsp?status=Category Updation Failed" />
+		</action>
+		<action attribute="item" name="item" path="/addNewItem" scope="request"
+			type="com.dts.project.action.AddNewItem">
+			<forward name="registerSuccess"
+				path="/Success.jsp?status=ITEM Registered SuccessFully" />
+			<forward name="registerFail" path="/Success.jsp?status=ITEM Registeration Failed" />
+
+		</action>
+		<action path="/deleteItemAction" type="com.dts.project.action.DeleteItem">
+			<forward name="deleteSuccess" path="/Success.jsp?status=ITEM Deleted SuccessFully" />
+			<forward name="deleteFail" path="/Success.jsp?status=ITEM Deleted Failed" />
+
+		</action>
+		<action path="/editItemAction" type="com.dts.project.action.EditItemAction"
+			name="item">
+			<forward name="updateSuccess" path="/Success.jsp?status=ITEM Updated SuccessFully" />
+			<forward name="updateFail" path="/Success.jsp?status=ITEM Updated Failed" />
+
+		</action>
+		<action path="/viewInventorybyCategory" type="org.apache.struts.actions.ForwardAction"
+			parameter="/ViewInventorybyCategory.jsp?header=list" />
+		<action path="/addNewInventory" type="com.dts.project.action.AddNewInventory"
+			validate="false" name="inventory">
+			<forward name="registerSuccess"
+				path="/Success.jsp?status=Inventory AddedSuccessFully" />
+			<forward name="registerFail" path="/Success.jsp?status=Inventory Addition Failed" />
+
+		</action>
+		<action path="/viewQueries" type="org.apache.struts.actions.ForwardAction"
+			parameter="/ViewQueries.jsp" />
+		<action path="/customerOrders" type="com.dts.project.action.CustomerOrders"
+			validate="false">
+			<forward name="ViewCustomerOrders" path="/UpdateCustomerOrder.jsp" />
+			<forward name="norecords" path="/Success.jsp?status=No Records Found" />
+
+		</action>
+		<action path="/adminchangepassword" type="org.apache.struts.actions.ForwardAction"
+			parameter="/ChangePassword.jsp" />
+		<action path="/adminchangequestion" type="org.apache.struts.actions.ForwardAction"
+			parameter="/ChangeQuestion.jsp" />
+		<action attribute="profile" name="profile" scope="request"
+			path="/adminChangePasswordAction" type="com.dts.project.action.AdminChangePasswordAction"
+			validate="false">
+			<forward name="ChangeSuccess"
+				path="/Success.jsp?status=Password Changed SuccessFully" />
+			<forward name="ChangeFail" path="/Success.jsp?status=Password Change is Failed" />
+
+		</action>
+		<action path="/customerhome" type="org.apache.struts.actions.ForwardAction"
+			parameter="/CustomerHome.jsp" />
+		<action path="/userViewCategories" type="com.dts.project.action.UserViewCategories"
+			validate="false">
+			<forward name="ViewCategories" path="/userViewCategories.jsp" />
+			<forward name="norecords" path="/Success1.jsp?status=No Records Found" />
+
+		</action>
+
+		<action path="/viewCustomerItems" type="com.dts.project.action.CustomerViewItems"
+			validate="false">
+
+			<forward name="ViewItems" path="/CustomerViewItems.jsp" />
+
+		</action>
+		<action path="/queries" type="org.apache.struts.actions.ForwardAction"
+			parameter="/Queries.jsp" />
+		<action path="/sendQuery" type="com.dts.project.action.SendQuery"
+			name="query">
+			<forward name="viewQueriesStatus"
+				path="/CustomerViewQuerys.do?status=Query Send Successfully " />
+
+		</action>
+		<action path="/CustomerViewQuerys" type="com.dts.project.action.ViewQuerys"
+			validate="false">
+			<forward name="viewQueriesStatus"
+				path="/ViewQueryStatus.jsp?status=Query Send Successfully " />
+
+		</action>
+		<action path="/employeeViewCategories"
+			type="com.dts.project.action.EmployeeViewCategoriesAction" validate="false">
+			<forward name="ViewCategories" path="/EmployeeViewCategories.jsp" />
+			<forward name="norecords" path="/Success1.jsp?status=No Records Found" />
+
+		</action>
+		<action path="/viewEmployeeCustomerItems"
+			type="com.dts.project.action.ViewEmployeeCustomerItemsAction"
+			validate="false">
+
+			<forward name="ViewItems" path="/EmployeeViewCustomerItems.jsp" />
+
+		</action>
+		<action path="/viewEmployeeCustomerOrders"
+			type="com.dts.project.action.ViewEmployeeCustomerOrdersAction"
+			validate="false">
+			<forward name="viewEmployeeCustomerOrders" path="/ViewEmployeeCustomerOrder.jsp" />
+			<forward name="norecords" path="/Success.jsp?status=No Records Found" />
+
+		</action>
+		<action path="/viewCustomerOrders" type="com.dts.project.action.ViewCustomerOrdersAction"
+			validate="false">
+			<forward name="viewCustomerOrders" path="/ViewCustomerOrder.jsp" />
+			<forward name="norecords" path="/CusrSuccess.jsp?status=No Records Found" />
+
+		</action>
+
+	</action-mappings>
+
+	<message-resources parameter="com.yourcompany.struts.ApplicationResources" />
+</struts-config>
+

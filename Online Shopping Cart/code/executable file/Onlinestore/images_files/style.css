@@ -1,0 +1,46 @@
+.bodybg {  background-image: url(images\body_bg.gif)}
+.tbbg { background-image: url(images\bg_table.gif); font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #310000; text-decoration: none; text-align: justify}
+.linksbg { background-image: url(images\bg_links.gif); font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF; text-decoration: none ; word-spacing: 5px}
+.linkstopbg { background-image: url(images\bg_top.gif); font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFFFF; text-decoration: none ; height: 31px; word-spacing: 5px}
+.tbFFC03F { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #310000; text-decoration: none ; background-color: #FFC03F; text-align: justify}
+.rightbg {  background-image: url(images\right-bg.gif); background-repeat: no-repeat; background-position: left 200px}
+.heading {  font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; color: #CA0C0E}
+.headingFFFF08 { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-weight: bold; color: #FFFF08}
+
+.links {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #CB0000; text-decoration: none; font-weight: bold}
+
+a { color:#ffffff; text-decoration:none;}
+a:hover { color:#000000; text-decoration: none; }
+a:active { color:#000000; text-decoration: none; }
+
+.txt { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; text-decoration: none ; text-align: justify }
+.txtimg { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; text-decoration: none ; text-align: center }
+.select { font-family: Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFF08; text-decoration: none; font-weight: normal}
+.txtbold { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; text-decoration: none ; text-align: justify ; font-weight: bold}
+.txtbold-g { font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #333333; text-decoration: none ; text-align: center; font-weight: bold }
+.links2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #CB0000;
+	text-decoration: none;
+	font-weight: bold;
+	
+}
+.links3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #CB0000;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+.red {
+font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #CB0000; text-decoration: none; font-weight: normal
+}
+.main_text {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-STYLE: normal; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.Header_text1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #ff27a1; FONT-STYLE: normal; FONT-FAMILY: Verdana
+}

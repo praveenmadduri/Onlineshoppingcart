@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="com.genuitec.eclipse.j2eedt.core.J2EE14_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.cross.easystruts.eclipse.STRUTS12_CONTAINER"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/classes12.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/commons-digester.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/commons-lang.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/commons-validator.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/iText-2.0.7.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/jakarta-oro.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/struts.jar"/>
+	<classpathentry kind="lib" path="H:/ALLPROJECTS/INFOSYS/Online Store/lib/struts-legacy.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

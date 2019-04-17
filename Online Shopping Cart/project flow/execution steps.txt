@@ -1,0 +1,67 @@
+execution procedure
+-------------------
+Backend process:
+
+connect to oracle database.
+go to start->run->sqlplus->ok->by entering username and password.
+It will be connected to oracle database.
+create a new user for your project.
+sql>create user username identified by password;
+sql>grant dba to username;
+sql>connect username/password;
+sql>select * from tab;
+no rows are selected bcoz it is the new user of our project.
+then minimize sqlplus.
+Go to start->run->imp.exe->ok->a window opens
+Enter username and password what you created for your project.
+It will ask to import the dump file(i.e.,database).Data base will be in project,open it and copy the dump file and paste on desktop.
+Drag and drop the dump file in to the imp.exe command prompt.
+Remove the double quotes.
+It asks buffer size->enter(it takes default buffer size).
+import files only---->no->enter.
+ignore errors-------->yes->enter.
+import grants-------->yes->enter.
+import table data---->yes->enter.
+import entire export files------>yes->enter.
+The tables will be imported and automatically the imp.exe command prompt closes.
+Again go to sqlplus
+sql>select * from tab;
+tables will be displayed.
+sql>select * from userdetails/logindetails;
+sql>desc userdetails/logindetails;
+sql>select loginid,password,logintype from userdetails;
+
+This is the backend process,same for Tomcat and MyEclipse.
+
+Frontend:
+--------
+Using MyEclipse:
+---------------
+1.Project Deployement.
+2.Connectivity.
+3.Run to execute.
+
+1.Project Deployement:
+---------------------
+Click on file->import->general->existing projects into workspace->next->
+browse->project name->sourcecode->code for MyEclipse->select all->finish.
+If there are any red cross marks on project tilte->rightclick on that->
+buildpath->configure buildpath->libraries->select red cross jar files ->
+remove->add external jars->open project->jars->select all lib files->open->ok.
+
+2.Connectivity:
+--------------
+Go to package Explorer open/expand project->webroot->WEB-INF->config->
+select system.properties,in that window select source at below we have
+properties and source.
+Change duser,dpass as you created for the project.
+url=jdbc:oracle:thin:@localhost:1521:xe
+In url we have hostname,portnumber,service name to change this names and number
+go to oracle where it is installed -> open it and search for tnsnames.ora->save.
+
+
+3.Run to execute:
+----------------
+Right click on project-->Run as-->MyEclipse server application. 
+
+ 
